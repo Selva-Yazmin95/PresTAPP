@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="www.ittepic.edu.mx.prestapp.Main"
+    android:background="#ffffff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/vertical"
+        android:weightSum="1"
+        android:gravity="center"
+        android:baselineAligned="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Nuevo Prestamo"
+                android:textColor="#ffffff"
+                android:padding="7dp"
+                android:layout_margin="8dp"
+                android:id="@+id/button"
+                android:onClick="irNuevo"
+                android:layout_weight="1"
+                android:background="#2B76C1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+            <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Lista de Prestamos"
+                android:layout_weight="1"
+                android:id="@+id/button2"
+                android:textColor="#ffffff"
+                android:padding="7dp"
+                android:layout_margin="8dp"
+                android:onClick="irRegistros"
+                android:background="#2B76C1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Devoluciones"
+                android:id="@+id/button3"
+                android:onClick="irCategorias"
+                android:background="#2B76C1"
+                android:textColor="#ffffff"
+                android:padding="7dp"
+                android:layout_margin="8dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" android:gravity="center">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Categorias"
+                android:id="@+id/button6"
+                android:layout_weight="1"
+                android:onClick="irCate"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_margin="7dp"
+                android:background="#2B76C1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <Button
+
+            android:layout_width="333dp"
+
+            android:layout_height="50dp"
+
+            android:background="#2B76C1"
+
+            android:text="SALIR"
+
+            android:textColor="#ffffff"
+
+            android:padding="7dp"
+
+            android:layout_margin="8dp"
+
+            android:id="@+id/Regresar"
+
+            android:onClick="regresar"
+
+            android:layout_gravity="right" />
+    </LinearLayout>
+</RelativeLayout>
